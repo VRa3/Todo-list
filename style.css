@@ -1,13 +1,11 @@
 body{
-/*background: #74ebd5;
-background: -webkit-linear-gradient(to left, #ACB6E5, #74ebd5);
-background: linear-gradient(to left, #ACB6E5, #74ebd5);*/
+
 background-image: url(
 https://images.pexels.com/photos/355887/pexels-photo-355887.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb
 );
 background-size: cover;
 background-position: center;
-opacity: 0.9;
+/*opacity: 0.9;*/
 }
 
 html{
@@ -16,13 +14,8 @@ html{
 }
 
 .container{
-  width: 360px;
+  width: 320px;
   margin: 100px auto;
-}
-
-.completed{
-  color: gray;
-  text-decoration: line-through;
 }
 
 h1{
@@ -41,6 +34,11 @@ h1{
 
 .fa-plus:hover{
   transform: scale(1.2);
+}
+
+.completed{
+  color: gray;
+  text-decoration: line-through;
 }
 
 input{
@@ -70,25 +68,27 @@ li{
   line-height: 50px;
   margin: 0;
   font-size: 18px;
-  font-weight: 600;
-  color: #4e4e4e
+  font-weight: 400;
+  color: #4e4e4e;
 }
 
 li:nth-of-type(2n){
   background-color: #ffffff;
 }
 
-span{
+
+#removeIcon{
   width: 20px;
   height: 50px;
   text-align: center;
   display: inline-block;
   transition: 0.2s;
   line-height: 50px;
-  color: rgba(238, 238, 238, 0);
+  cursor: pointer;
+  color: transparent;
 }
 
-span:hover{
+#removeIcon:hover{
   height: 50px;
   padding: 0px;
   background-color: red;
@@ -97,3 +97,5 @@ span:hover{
   display: inline-block;
   color: white;
 }
+
+
