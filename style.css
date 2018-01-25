@@ -1,0 +1,99 @@
+body{
+/*background: #74ebd5;
+background: -webkit-linear-gradient(to left, #ACB6E5, #74ebd5);
+background: linear-gradient(to left, #ACB6E5, #74ebd5);*/
+background-image: url(
+https://images.pexels.com/photos/355887/pexels-photo-355887.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb
+);
+background-size: cover;
+background-position: center;
+opacity: 0.9;
+}
+
+html{
+  height: 100%;
+  font-family: Roboto;
+}
+
+.container{
+  width: 360px;
+  margin: 100px auto;
+}
+
+.completed{
+  color: gray;
+  text-decoration: line-through;
+}
+
+h1{
+  color: white;
+  padding: 13px 20px;
+  background-color: #2389ff;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.fa-plus{
+  float: right;
+  transition: 0.3s;
+}
+
+.fa-plus:hover{
+  transform: scale(1.2);
+}
+
+input{
+  width: 100%;
+  height: 60px;
+  padding: 13px 20px;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-weight: 700;
+  outline: none;
+  border: none;
+}
+
+input::placeholder{
+  opacity: 0.6;
+}
+
+ul{
+  background-color: #ededed;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+li{
+  height: 50px;
+  line-height: 50px;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #4e4e4e
+}
+
+li:nth-of-type(2n){
+  background-color: #ffffff;
+}
+
+span{
+  width: 20px;
+  height: 50px;
+  text-align: center;
+  display: inline-block;
+  transition: 0.2s;
+  line-height: 50px;
+  color: rgba(238, 238, 238, 0);
+}
+
+span:hover{
+  height: 50px;
+  padding: 0px;
+  background-color: red;
+  width: 40px;
+  text-align: center;
+  display: inline-block;
+  color: white;
+}
