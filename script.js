@@ -12,7 +12,7 @@ $("ul").on("click", "#removeIcon", function(event){
 $("input[type=text]").on("keypress", function(Event){
   if(Event.which === 13){
     var todoText = $(this).val();
-    $("ul").append("<li><span id=\"removeIcon\"><i class=\"fa fa-trash\"></i></span> " + todoText +"</li>");
+    $("ul").append("<li><span id=\"removeIcon\"><i class=\"fa fa-trash\"></i></span> " + todoText +"<span id=\"importantIcon\"><i class=\"emptyStar fa fa-star-o\"></i></span></li>");
     $("input").val("");
   }
 });
@@ -21,7 +21,6 @@ $(".fa-plus").on("click", function(){
   $("input").fadeToggle(200);
 })
 
-// making select star work
 
 $("ul").on("mouseenter", "#importantIcon", function(){
   $(this).children().removeClass("emptyStar");
