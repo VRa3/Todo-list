@@ -7,17 +7,30 @@
   <link rel="stylesheet" href="style.css">
   <script src="jquery-3.2.1.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
 </head>
 <body>
 
 <div class="container">
   <h1>To-Do list<i class="fa fa-plus"></i></h1>
+  
   <input type="text" placeholder="Add todo">
   <ul>
-    <li><span><i class="fa fa-trash"></i></span>Duel Someone</li>
-    <li><span><i class="fa fa-trash"></i></span>Buy Mount</li>
-    <li><span><i class="fa fa-trash"></i></span>Get Buffed</li>
+    <li>
+      <span id="removeIcon"><i class="fa fa-trash"></i></span>
+      Duel Someone
+      <span id="importantIcon"><i class="emptyStar fa fa-star-o"></i></span>
+    </li>
+    <li>
+      <span id="removeIcon"><i class="fa fa-trash"></i></span>
+      Buy Mount
+      <span id="importantIcon"><i class="emptyStar fa fa-star-o"></i></span>
+      </li>
+    <li>
+      <span id="removeIcon"><i class="fa fa-trash"></i></span>
+      Get Buffed
+      <span id="importantIcon"><i class="emptyStar fa fa-star-o"></i></span>
+    </li>
   </ul>
 </div>
 <script src="script.js"></script>
