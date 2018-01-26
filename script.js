@@ -21,8 +21,32 @@ $(".fa-plus").on("click", function(){
   $("input").fadeToggle(200);
 })
 
+// making select star work
+
+$("ul").on("mouseenter", "#importantIcon", function(){
+  $(this).children().removeClass("emptyStar");
+  $(this).children().addClass("selectedStar");
+});
+
+$("ul").on("mouseleave", "#importantIcon", function(){
+  
+  $(this).children().removeClass("selectedStar");
+  $(this).children().addClass("emptyStar");
+  
+  if($(this).children().hasClass("fa fa-star")){
+    
+  $(this).children().removeClass("emptyStar");
+  $(this).children().addClass("selectedStar");
+  }
+});
+
 $("ul").on("click", "#importantIcon", function(event){
-  $(this).parent().toggleClass("strong");
-  $(this).toggleClass("selectedStar");
+  $(this).children().toggleClass("fa fa-star-o");
+  $(this).children().toggleClass("fa fa-star");
+  
+  if($(this).children().hasClass("fa fa-star")){
+  $(this).children().addClass("selectedStar");
+  }
+  
   event.stopPropagation();
 });

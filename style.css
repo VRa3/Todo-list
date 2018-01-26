@@ -98,4 +98,30 @@ li:nth-of-type(2n){
   color: white;
 }
 
+#importantIcon{
+  float: right;
+}
+
+.emptyStar{
+  width: 20px;
+  height: 50px;
+  text-align: center;
+  display: inline-block;
+  transition: 0.2s;
+  line-height: 50px;
+  cursor: pointer;
+  color: black;
+}
+
+.selectedStar{
+  width: 20px;
+  height: 50px;
+  text-align: center;
+  display: inline-block;
+  transition: 0.2s;
+  line-height: 50px;
+  cursor: pointer;
+  color: gold;
+}
+
 
