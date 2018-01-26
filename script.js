@@ -43,10 +43,10 @@ $("ul").on("mouseleave", "#importantIcon", function(){
 $("ul").on("click", "#importantIcon", function(event){
   $(this).children().toggleClass("fa fa-star-o");
   $(this).children().toggleClass("fa fa-star");
+  $(this).parent().toggleClass("strong");
   
   if($(this).children().hasClass("fa fa-star")){
   $(this).children().addClass("selectedStar");
   }
-  
   event.stopPropagation();
 });
