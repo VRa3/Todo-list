@@ -24,15 +24,27 @@ h1{
   background-color: #2389ff;
   margin: 0;
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 26px;
+  line-height: 60px;
 }
 
-.fa-plus{
+h1 .fa-plus{
   float: right;
-  transition: 0.3s;
+  transition: 0.4s;
+  padding: 20px;
 }
 
 .fa-plus:hover{
+  transform: scale(1.2);
+}
+
+h1 .fa-trash-o{
+  float: right;
+  padding: 20px 0;
+  transition: 0.4s;
+}
+
+h1 .fa-trash-o:hover{
   transform: scale(1.2);
 }
 
@@ -75,7 +87,6 @@ li{
 li:nth-of-type(2n){
   background-color: #ffffff;
 }
-
 
 #removeIcon{
   width: 20px;
@@ -125,4 +136,6 @@ li:nth-of-type(2n){
 .strong{
   font-weight: 900;
 }
+
+
 
