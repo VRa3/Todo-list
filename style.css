@@ -4,7 +4,7 @@ background-image: url(
 https://images.pexels.com/photos/355887/pexels-photo-355887.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb
 );
 background-size: cover;
-background-position: center;
+background-position: 46%;
 opacity: 0.9;
 }
 
@@ -14,7 +14,7 @@ html{
 }
 
 .container{
-  width: 320px;
+  width: 340px;
   margin: 100px auto;
 }
 
@@ -26,12 +26,14 @@ h1{
   text-transform: uppercase;
   font-size: 26px;
   line-height: 60px;
+  border-radius: 20px 0px 0px;
 }
 
 h1 .fa-plus{
   float: right;
   transition: 0.4s;
-  padding: 20px;
+  margin: 20px;
+  cursor: pointer;
 }
 
 .fa-plus:hover{
@@ -42,6 +44,7 @@ h1 .fa-trash-o{
   float: right;
   padding: 20px 0;
   transition: 0.4s;
+  cursor: pointer;
 }
 
 h1 .fa-trash-o:hover{
@@ -81,7 +84,8 @@ li{
   margin: 0;
   font-size: 18px;
   font-weight: 400;
-  color: #4e4e4e;
+  color: #4e4e4e;  
+  transition: background-color 0.5s;
 }
 
 li:nth-of-type(2n){

@@ -60,14 +60,16 @@ $(".fa-plus").on("click", function(){
   var newText = capitalizeFirstLetter(todoText);
   
     if(newText.length >= 3){
-      $("ul").append("<li><span id=\"removeIcon\"><i class=\"fa fa-trash\"></i></span> " + newText +"<span id=\"importantIcon\"><i class=\"emptyStar fa fa-star-o\"></i></span></li>");
+      $("ul").append("<li><span id=\"removeIcon\"><i class=\"fa fa-trash\"></i></span> " + newText +"<span id=\"importantIcon\"><i class=\"emptyStar fa fa-star-o\"></i></span></li>")
   }
   $("input").val("");
 })
 
 $(".fa-trash-o").on("click", function(){
   if($("li").hasClass("completed")){
-    $("li.completed").remove();
+    $("li.completed").slideUp(600, 'easeOutQuart', function(){
+      $(this).remove();
+    })
   }
 });
 
