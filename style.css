@@ -1,21 +1,22 @@
-body{
-
-background-image: url(
-https://images.pexels.com/photos/355887/pexels-photo-355887.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb
-);
-background-size: cover;
-background-position: 46%;
-opacity: 0.9;
-}
-
 html{
-  height: 100%;
   font-family: Roboto;
+  margin: 0;
+  height: 100%;  
 }
+
+body{
+  background-image: url(
+    https://images.pexels.com/photos/355887/pexels-photo-355887.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb
+  );
+  background-size: cover;
+  background-position: 46%;
+}
+
 
 .container{
   width: 340px;
   margin: 100px auto;
+  opacity: 0.9;
 }
 
 h1{
@@ -76,6 +77,8 @@ ul{
   margin: 0;
   padding: 0;
   list-style-type: none;
+  max-height: 470px;
+  overflow-y: scroll;
 }
 
 li{
