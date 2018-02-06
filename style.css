@@ -140,9 +140,3 @@ li:nth-of-type(2n){
   font-weight: 900;
 }
 
-@media (max-height: 900px) {
-  ul{
-    height: 500px;
-    overflow-y: scroll;
-  }
-}
