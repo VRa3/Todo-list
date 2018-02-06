@@ -2,16 +2,21 @@ html{
   font-family: Roboto;
   margin: 0;
   height: 100%;
-  background-image: url(https://images.pexels.com/photos/9065/night-milky-way-stars.jpg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb
+}
+
+body{
+  background-image: url(https://images.pexels.com/photos/355887/pexels-photo-355887.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb
     );
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: 46%;
+  margin: 0;
 }
 
 .container{
   width: 340px;
   margin: 100px auto;
-  opacity: 0.9;
+  opacity: 0.1;
 }
 
 h1{
