@@ -1,18 +1,13 @@
 html{
   font-family: Roboto;
   margin: 0;
-  height: 100vh;
-}
-
-body{
+  height: 100%;
   background-image: url(
     https://images.pexels.com/photos/355887/pexels-photo-355887.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb
-  );
+    );
   background-size: cover;
   background-position: 46%;
-  background-repeat: no-repeat;
 }
-
 
 .container{
   width: 340px;
@@ -22,7 +17,7 @@ body{
 
 h1{
   color: white;
-  padding: 13px 20px;
+  padding: 10px 20px;
   background-color: #2389ff;
   margin: 0;
   text-transform: uppercase;
@@ -78,7 +73,7 @@ ul{
   margin: 0;
   padding: 0;
   list-style-type: none;
-  max-height: 400px;
+  max-height: 300px;
   overflow-y: scroll;
 }
 
@@ -145,5 +140,9 @@ li:nth-of-type(2n){
   font-weight: 900;
 }
 
-
-
+@media (max-height: 900px) {
+  ul{
+    height: 500px;
+    overflow-y: scroll;
+  }
+}
